@@ -1,0 +1,241 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>layout</title>
+
+        <style>
+
+            header{
+                background-color: rgb(37, 37, 37);
+                padding: 20px;
+            }
+
+            nav{
+                background-color: rgb(48, 47, 47);
+                padding: 2px;
+            }
+
+            main{
+                background-color: rgb(63, 63, 63);
+                height: 400px;
+                width: 100%;
+                overflow: auto
+            }
+
+            aside{
+                background-color: rgb(77, 77, 77);
+                height: 400px;
+                width: 100%;
+            }
+
+            footer{
+                background-color: rgb(94, 94, 94);
+                display: flex;
+            }
+
+            footer ul{
+                flex-grow: 1;
+                list-style: none;
+            }
+
+            .mainaside{display: flex;
+                flex-wrap: wrap;
+                overflow: auto;
+            }
+
+            .navbar{
+                flex-wrap: wrap;
+                color: antiquewhite;
+                margin: 0;
+                padding: 0;
+                list-style: none
+            }
+
+            .navitem{
+                flex-grow: 1;
+                text-align: center; 
+            }
+
+            .navlink{
+                text-decoration: none;
+                color: aliceblue;
+                padding: 10px;
+                display: block;
+            }
+
+            .navlink:hover{
+                background-color: aqua;
+            }
+
+            .footerbar{
+                flex-wrap: wrap;
+                color: antiquewhite;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                padding: 10px;
+            }
+
+            .footeritem{
+                flex-grow: 1;
+                text-align: center;
+            }
+
+            .titulo{
+                text-align: center;
+                flex-grow: 1;
+                align-self: center;
+                color: aliceblue;
+            }
+
+            .imagem{
+                width: 25%;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 2px;
+                margin: auto
+            }
+
+            @media(min-width:576px){
+                .navbar{display: flex;}
+                main{width: 70%;}
+                aside{width: 30%;}
+                .footerbar{display: flex;}
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <header>
+                <img  class="imagem" src="imagens\pic_trulli.jpg" alt="senac">
+                <h1 class="titulo">Alguem me ajuda plmds</h1>
+        </header>
+        <nav>
+            <ul class="navbar">
+                    <!-- ul.navbar-nav>li.navitem*5>a.navlink -->
+                    <li class="navitem"><a href="#" class="navlink">link</a></li>
+                    <li class="navitem"><a href="#" class="navlink">link</a></li>
+                    <li class="navitem"><a href="#" class="navlink">link</a></li>
+                    <li class="navitem"><a href="#" class="navlink">link</a></li>
+                    <li class="navitem"><a href="#" class="navlink">link</a></li>
+            </ul>
+        </nav>
+            <div class="mainaside">
+                <main>
+                    <h1>Conteudo</h1>
+                    <!-- p*6>lorem -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi cupiditate consequuntur iure molestiae et enim vitae dolores nobis iusto, illum voluptatibus impedit ullam est sed! Praesentium culpa dolore nemo?</p>
+                    <p>Ab dolores possimus est cum, suscipit inventore veniam eveniet. Odit dolore culpa nostrum laborum quis id provident voluptates aspernatur eius, et magnam atque ab fuga voluptas tempore quaerat perferendis dolorum?</p>
+                    <p>Veniam, nulla beatae molestias eos fugiat perspiciatis ex? Aliquid perferendis cum culpa voluptatem. Vitae similique ea, voluptatibus optio accusantium veritatis veniam labore perspiciatis laborum quo neque laboriosam pariatur delectus nesciunt.</p>
+                    <p>Dolore fuga, perspiciatis vel molestias nostrum delectus voluptatem eum repellat architecto sunt dolorum quos nesciunt. Voluptates, libero provident perspiciatis facere tenetur aut nihil repellendus fugiat. quisquam architecto non vero minima.</p>
+                    <p>Eos iure quibusdam ad, voluptatibus modi culpa quae, fugit consectetur fuga facere, quo deserunt voluptas? Autem, eos deleniti quia tempora nihil, magni amet, quam praesentium quibusdam sed possimus iusto est.</p>
+                    <p>Repellendus esse voluptate quia porro earum, omnis dolor sed quasi totam tenetur odio aspernatur incidunt nemo dignissimos veniam labore distinctio deleniti non velit? Error repellendus qui ipsam officia assumenda natus!</p>
+                </main>
+                <aside>
+                    <table>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                        <tr>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                            <td>hmmm</td>
+                        </tr>
+                    </table>
+                </aside>
+            </div>
+        <footer>
+            <ul class="footerbar">
+                <li class="footeritem">oloco</li>
+                <li class="footeritem">oloco</li>
+                <li class="footeritem">oloco</li>
+                <li class="footeritem">oloco</li>
+                <li class="footeritem">oloco</li>
+        </ul>
+        </footer>
+    </body>
+ </html>
