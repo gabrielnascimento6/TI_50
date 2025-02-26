@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body id="corpo">
     <h1 id="mensagem">Olá JavaScript</h1>
 
     <form>
@@ -30,7 +30,20 @@
     <button onclick="document.getElementById('mensagem2').style.color = 'red';">Vermelho</button>
     <button onclick="document.getElementById('mensagem2').style.color = 'blue';">Azul</button>
     <button onclick="document.getElementById('mensagem2').style.fontSize = '30px';">Aumentar</button>
-    <button onclick="document.getElementById('mensagem2').style.fontSize = '16px';">Diminuir</button>
+    <button onclick="document.getElementById('mensagem2').style.fontSize = '16px';">Diminuir</button><br><br>
     
+    <hr><br>
+
+
+    <button onclick="TemaEscuro();TemaClaro();">Tema Escuro</button>
+
+    <script>
+        function TemaEscuro() {
+            document.getElementById('corpo');
+            corpo.style.backgroundColor = '#222222';
+            corpo.style.color = '#b0b0b0';
+        }
+    </script>
+
 </body>
 </html>
