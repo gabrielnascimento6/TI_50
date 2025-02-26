@@ -1,0 +1,31 @@
+p{
+    color:rgb(0, 0, 0);
+    background-color: rgb(0, 255, 255);
+
+    border-top-style:solid;
+    border-right-style:dashed;
+    border-left-style:dashed;
+    border-bottom-style:solid;
+
+    border-top-color: aquamarine;
+    border-right-color: blue;
+    border-left-color: brown;
+    border-bottom-color: black;
+
+    border-style: solid dashed solid dashed;       /*forma resumida*/
+    border-width: 5px 10px 10px 15px;              /*forma resumida*/
+    border-color: black black black black;  /*forma resumida*/
+}
+h1{
+    color:rgb(0, 0, 0);
+    background-color: rgb(0, 255, 255);
+
+    border-style:dashed; /*estilo de borda*/
+    border-width: 5px; /*espessura da borda*/
+    border-color: rgb(0, 0, 0); /*cor da borda*/
+
+    border: double 8px rgb(0, 0, 0); /*forma resumida*/
+
+    padding: 10px;
+    margin: 30px;
+}
