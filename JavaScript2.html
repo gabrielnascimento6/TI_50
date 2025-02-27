@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript</title>
+
+    <style>
+        .oculto{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Manipular Visibilisade</h1>
     <button id="btn" onclick="mostrar()">mostrar</button>
     <button id="btn2" style="display: none;" onclick="ocultar()">ocultar</button>
     <p id="msg" style="display: none;">Olá Mundo</p>
-    <hr>
     <script>
         function mostrar() {
             document.getElementById('msg').style.display = 'block';
@@ -23,6 +28,16 @@
             document.getElementById('btn2').style.display = 'none';
         }
     </script>
-    
+
+    <br><br><hr>
+
+    <h1>Alternando classes</h1>
+    <button onclick="mostrar2()">Manipular Classe</button>
+    <p class="oculto" id="msg2">Olá Mundo</p>
+    <script>
+        function mostrar2() {
+            document.getElementById('msg2').classList.toggle('oculto');
+        }
+    </script>
 </body>
 </html>
