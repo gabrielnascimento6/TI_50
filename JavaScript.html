@@ -35,13 +35,23 @@
     <hr><br>
 
 
-    <button onclick="TemaEscuro();TemaClaro();">Tema Escuro</button>
+    <button id="dark" onclick="TemaEscuro()">Tema Escuro</button>
+    <button id="white" style="display: none;" onclick="TemaClaro()">Tema Claro</button>
 
     <script>
         function TemaEscuro() {
             document.getElementById('corpo');
             corpo.style.backgroundColor = '#222222';
             corpo.style.color = '#b0b0b0';
+            document.getElementById('dark').style.display = 'none';
+            document.getElementById('white').style.display = 'block';  
+        }
+        function TemaClaro() {
+            document.getElementById('corpo');
+            corpo.style.backgroundColor = '#ffffff';
+            corpo.style.color = '#000000';
+            document.getElementById('dark').style.display = 'block';
+            document.getElementById('white').style.display = 'none';  
         }
     </script>
 

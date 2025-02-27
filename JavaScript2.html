@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipular Visibilisade</h1>
+    <button id="btn" onclick="mostrar()">mostrar</button>
+    <button id="btn2" style="display: none;" onclick="ocultar()">ocultar</button>
+    <p id="msg" style="display: none;">Olá Mundo</p>
+    <hr>
+    <script>
+        function mostrar() {
+            document.getElementById('msg').style.display = 'block';
+            document.getElementById('btn').style.display = 'none';
+            document.getElementById('btn2').style.display = 'block';
+        }
+        function ocultar() {
+            document.getElementById('msg').style.display = 'none';
+            document.getElementById('btn').style.display = 'block';
+            document.getElementById('btn2').style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>
